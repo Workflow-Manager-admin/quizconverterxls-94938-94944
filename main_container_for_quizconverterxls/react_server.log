@@ -91,3 +91,25 @@ src/components/QuizConverterXLSMainContainer.js
 Search for the keywords to learn more about each error.
 
 webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/QuizConverterXLSMainContainer.js
+  Line 103:14:  'previewData' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/components/QuizConverterXLSMainContainer.js
+  Line 3:8:   'mammoth' is defined but never used               no-unused-vars
+  Line 4:10:  'extractQuizData' is defined but never used       no-unused-vars
+  Line 39:9:  'handleClear' is assigned a value but never used  no-unused-vars
+  Line 46:9:  'displayData' is assigned a value but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/components/QuizConverterXLSMainContainer.js
+  Line 103:14:  'previewData' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning

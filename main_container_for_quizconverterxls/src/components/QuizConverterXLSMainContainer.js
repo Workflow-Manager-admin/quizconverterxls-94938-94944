@@ -74,7 +74,14 @@ const QuizConverterXLSMainContainer = () => {
       {/* Processing status */}
       {isProcessing && (
         <div className="processing-section">
-          Processing document...
+          <div className="loader"></div> Processing document...
+        </div>
+      )}
+      
+      {/* Error message display */}
+      {error && (
+        <div className="error-message">
+          {error}
         </div>
       )}
       
