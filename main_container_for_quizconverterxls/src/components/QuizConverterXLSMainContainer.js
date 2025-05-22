@@ -115,8 +115,21 @@ const QuizConverterXLSMainContainer = () => {
       
       {/* Action buttons */}
       <div className="btn-container">
-        <button className="btn">Export to Excel</button>
-        <button className="btn btn-secondary">Clear</button>
+        <button 
+          className="btn" 
+          disabled={extractedQuizData.length === 0}
+          style={extractedQuizData.length === 0 ? { opacity: 0.6, cursor: 'not-allowed' } : {}}
+        >
+          Export to Excel
+        </button>
+        <button 
+          className="btn btn-secondary" 
+          onClick={handleClear}
+          disabled={!file && extractedQuizData.length === 0}
+          style={!file && extractedQuizData.length === 0 ? { opacity: 0.6, cursor: 'not-allowed' } : {}}
+        >
+          Clear
+        </button>
       </div>
       
       {/* Instructions */}
