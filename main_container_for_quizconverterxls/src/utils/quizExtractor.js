@@ -181,11 +181,11 @@ const parseQuestionBlock = (questionHtml) => {
   const optionsText = textContent.substring(questionEndIndex).trim();
   
   // Extract options (looking for patterns like A., B., C., etc.)
-  const optionMatches = optionsText.match(/[A-Z][\.\)]\s*[^\n\r]*([\n\r]|$)/g) || [];
+  const optionMatches = optionsText.match(/[A-Z][.)]\s*[^\n\r]*([\n\r]|$)/g) || [];
   
   const options = optionMatches.map(match => {
     // Remove the option label (A., B., etc.) and clean up
-    return match.replace(/^[A-Z][\.\)]\s*/i, '').trim();
+    return match.replace(/^[A-Z][.)]\s*/i, '').trim();
   }).filter(option => option.length > 0);
   
   // Try to identify the correct answer
