@@ -1,0 +1,5 @@
+{
+  "task_description": "{'component_name': 'Main Container for QuizConverterXLS', 'description': 'Primary container for QuizConverterXLS implementation: A utility tool to convert Word-based quiz questions into a structured Excel format, allowing easy transfer of multiple-choice questions with options and correct answers.', 'framework': 'react', 'platform': 'web'}",
+  "tasks": {},
+  "next_task_id": 1
+}
