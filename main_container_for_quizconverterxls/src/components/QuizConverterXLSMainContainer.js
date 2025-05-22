@@ -14,6 +14,8 @@ import { extractQuizData } from '../utils/quizExtractor';
 const QuizConverterXLSMainContainer = () => {
   const [file, setFile] = useState(null);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [extractedQuizData, setExtractedQuizData] = useState([]);
+  const [error, setError] = useState(null);
   
   // Handle file selection
   const handleFileChange = (event) => {
