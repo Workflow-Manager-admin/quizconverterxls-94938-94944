@@ -29,10 +29,40 @@ const QuizConverterXLSMainContainer = () => {
     if (!file) return;
     
     setIsProcessing(true);
-    // Simulate processing
-    setTimeout(() => {
+    setError(null);
+    
+    // Use FileReader to read the file content
+    const reader = new FileReader();
+    
+    reader.onloadend = () => {
+      // Process the file with mammoth to convert DOCX to HTML
+      mammoth.convertToHtml({ arrayBuffer: reader.result })
+        .then(result => {
+          // Extract quiz data from the HTML content
+          const htmlContent = result.value;
+          const quizData = extractQuizData(htmlContent);
+          
+          if (quizData && quizData.length > 0) {
+            setExtractedQuizData(quizData);
+          } else {
+            setError('No quiz questions could be extracted from the document. Please check the format.');
+          }
+          setIsProcessing(false);
+        })
+        .catch(err => {
+          console.error('Error processing document:', err);
+          setError('Error processing the document. Please try again.');
+          setIsProcessing(false);
+        });
+    };
+    
+    reader.onerror = () => {
+      setError('Error reading the file. Please try again.');
       setIsProcessing(false);
-    }, 1500);
+    };
+    
+    // Read the file as ArrayBuffer for mammoth.js processing
+    reader.readAsArrayBuffer(file);
   };
   
   // Clear function to reset the state
