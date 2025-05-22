@@ -35,11 +35,20 @@ const QuizConverterXLSMainContainer = () => {
     }, 1500);
   };
   
-  // Demo data for preview table
-  const previewData = [
-    { question: "What is the capital of France?", options: ["London", "Paris", "Berlin", "Madrid"], answer: "B" },
-    { question: "Which planet is known as the Red Planet?", options: ["Venus", "Mars", "Jupiter", "Saturn"], answer: "B" }
-  ];
+  // Clear function to reset the state
+  const handleClear = () => {
+    setFile(null);
+    setExtractedQuizData([]);
+    setError(null);
+  };
+  
+  // Use extracted quiz data if available, otherwise use demo data
+  const displayData = extractedQuizData.length > 0 
+    ? extractedQuizData 
+    : [
+        { question: "What is the capital of France?", options: ["London", "Paris", "Berlin", "Madrid"], answer: "B" },
+        { question: "Which planet is known as the Red Planet?", options: ["Venus", "Mars", "Jupiter", "Saturn"], answer: "B" }
+      ];
   
   return (
     <div className="quiz-converter-container">
