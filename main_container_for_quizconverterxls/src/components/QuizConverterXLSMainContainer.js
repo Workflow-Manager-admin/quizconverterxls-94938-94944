@@ -100,7 +100,7 @@ const QuizConverterXLSMainContainer = () => {
             </tr>
           </thead>
           <tbody>
-            {previewData.map((item, index) => (
+            {displayData.map((item, index) => (
               <tr key={index}>
                 <td>{item.question}</td>
                 {item.options.map((option, optIndex) => (
