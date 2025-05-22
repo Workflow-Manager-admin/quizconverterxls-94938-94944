@@ -1,0 +1,198 @@
+.quiz-converter-container {
+  padding: 2rem;
+}
+
+.converter-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.converter-description {
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Upload area styles */
+.upload-area {
+  border: 2px dashed var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.upload-area.active {
+  border-color: var(--kavia-orange);
+  background-color: rgba(232, 122, 65, 0.1);
+}
+
+.upload-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.upload-area.active .upload-icon {
+  color: var(--kavia-orange);
+}
+
+.upload-text {
+  margin-bottom: 1rem;
+}
+
+.file-info {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--kavia-orange);
+  margin-top: 0.5rem;
+}
+
+/* Processing section styles */
+.processing-section {
+  margin-bottom: 2rem;
+}
+
+.loader {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--kavia-orange);
+  animation: spin 1s linear infinite;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1);
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* Preview table styles */
+.preview-section {
+  margin-bottom: 3rem;
+  overflow-x: auto;
+}
+
+.preview-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.preview-table th,
+.preview-table td {
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.preview-table th {
+  background-color: rgba(255, 255, 255, 0.05);
+  font-weight: 600;
+  color: var(--kavia-orange);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.preview-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.preview-table tbody tr:hover {
+  background-color: rgba(232, 122, 65, 0.1);
+}
+
+/* Button styles (extending from App.css) */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--kavia-orange);
+  color: var(--kavia-orange);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(232, 122, 65, 0.1);
+}
+
+.btn-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-disabled:hover {
+  background-color: var(--kavia-orange);
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--text-secondary);
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Instructions section */
+.instructions {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.instructions h3 {
+  color: var(--kavia-orange);
+  margin-top: 0;
+}
+
+.instructions ol {
+  margin-left: 1.5rem;
+  padding-left: 0;
+}
+
+.instructions li {
+  margin-bottom: 0.75rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .quiz-converter-container {
+    padding: 1rem;
+  }
+  
+  .upload-area {
+    padding: 1.5rem;
+  }
+  
+  .btn-container {
+    flex-direction: column;
+  }
+}
