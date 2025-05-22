@@ -36,7 +36,7 @@ const splitIntoQuestions = (htmlContent) => {
   
   // Find potential question starters using regex
   // This looks for patterns like "1.", "2)", "Question 1:", etc.
-  const questionRegex = /(?:\n|\r|\r\n)(?:\d+[\.\):]|[A-Za-z][\.\):])(?:\s+|$)|(?:\n|\r|\r\n)Question\s+\d+[\.\:]/gi;
+  const questionRegex = /(?:\n|\r|\r\n)(?:\d+[.):]|[A-Za-z][.):])(?:\s+|$)|(?:\n|\r|\r\n)Question\s+\d+[.:]/gi;
   
   // Get the positions of all matches
   const matches = [];
@@ -71,7 +71,7 @@ const splitIntoQuestions = (htmlContent) => {
         currentQuestion += paragraphs[i].outerHTML;
       } 
       // If paragraph looks like options (starts with A., B., etc.)
-      else if (/^[A-D][\.\)]/.test(para) && questionStarted) {
+      else if (/^[A-D][.)]/.test(para) && questionStarted) {
         currentQuestion += paragraphs[i].outerHTML;
       } 
       // If paragraph indicates the correct answer

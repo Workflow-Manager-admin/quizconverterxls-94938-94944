@@ -25,3 +25,202 @@ Compiling...
 Compiled successfully!
 webpack compiled successfully
 Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/utils/quizExtractor.js
+  Line 39:47:   Unnecessary escape character: \.  no-useless-escape
+  Line 39:49:   Unnecessary escape character: \)  no-useless-escape
+  Line 39:63:   Unnecessary escape character: \.  no-useless-escape
+  Line 39:65:   Unnecessary escape character: \)  no-useless-escape
+  Line 39:109:  Unnecessary escape character: \.  no-useless-escape
+  Line 39:111:  Unnecessary escape character: \:  no-useless-escape
+  Line 74:24:   Unnecessary escape character: \.  no-useless-escape
+  Line 74:26:   Unnecessary escape character: \)  no-useless-escape
+  Line 178:46:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:48:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:65:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:67:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:90:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:92:  Unnecessary escape character: \:  no-useless-escape
+  Line 184:50:  Unnecessary escape character: \.  no-useless-escape
+  Line 184:52:  Unnecessary escape character: \)  no-useless-escape
+  Line 188:34:  Unnecessary escape character: \.  no-useless-escape
+  Line 188:36:  Unnecessary escape character: \)  no-useless-escape
+  Line 193:82:  Unnecessary escape character: \.  no-useless-escape
+  Line 193:84:  Unnecessary escape character: \)  no-useless-escape
+  Line 194:52:  Unnecessary escape character: \.  no-useless-escape
+  Line 194:54:  Unnecessary escape character: \)  no-useless-escape
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/utils/quizExtractor.js
+  Line 39:47:   Unnecessary escape character: \.  no-useless-escape
+  Line 39:49:   Unnecessary escape character: \)  no-useless-escape
+  Line 39:63:   Unnecessary escape character: \.  no-useless-escape
+  Line 39:65:   Unnecessary escape character: \)  no-useless-escape
+  Line 39:109:  Unnecessary escape character: \.  no-useless-escape
+  Line 39:111:  Unnecessary escape character: \:  no-useless-escape
+  Line 74:24:   Unnecessary escape character: \.  no-useless-escape
+  Line 74:26:   Unnecessary escape character: \)  no-useless-escape
+  Line 178:46:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:48:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:65:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:67:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:90:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:92:  Unnecessary escape character: \:  no-useless-escape
+  Line 184:50:  Unnecessary escape character: \.  no-useless-escape
+  Line 184:52:  Unnecessary escape character: \)  no-useless-escape
+  Line 188:34:  Unnecessary escape character: \.  no-useless-escape
+  Line 188:36:  Unnecessary escape character: \)  no-useless-escape
+  Line 193:82:  Unnecessary escape character: \.  no-useless-escape
+  Line 193:84:  Unnecessary escape character: \)  no-useless-escape
+  Line 194:52:  Unnecessary escape character: \.  no-useless-escape
+  Line 194:54:  Unnecessary escape character: \)  no-useless-escape
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/utils/quizExtractor.js
+  Line 39:47:   Unnecessary escape character: \.  no-useless-escape
+  Line 39:49:   Unnecessary escape character: \)  no-useless-escape
+  Line 39:63:   Unnecessary escape character: \.  no-useless-escape
+  Line 39:65:   Unnecessary escape character: \)  no-useless-escape
+  Line 39:109:  Unnecessary escape character: \.  no-useless-escape
+  Line 39:111:  Unnecessary escape character: \:  no-useless-escape
+  Line 74:24:   Unnecessary escape character: \.  no-useless-escape
+  Line 74:26:   Unnecessary escape character: \)  no-useless-escape
+  Line 178:46:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:48:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:65:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:67:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:90:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:92:  Unnecessary escape character: \:  no-useless-escape
+  Line 184:50:  Unnecessary escape character: \.  no-useless-escape
+  Line 184:52:  Unnecessary escape character: \)  no-useless-escape
+  Line 188:34:  Unnecessary escape character: \.  no-useless-escape
+  Line 188:36:  Unnecessary escape character: \)  no-useless-escape
+  Line 193:82:  Unnecessary escape character: \.  no-useless-escape
+  Line 193:84:  Unnecessary escape character: \)  no-useless-escape
+  Line 194:52:  Unnecessary escape character: \.  no-useless-escape
+  Line 194:54:  Unnecessary escape character: \)  no-useless-escape
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/utils/quizExtractor.js
+  Line 39:47:   Unnecessary escape character: \.  no-useless-escape
+  Line 39:49:   Unnecessary escape character: \)  no-useless-escape
+  Line 39:63:   Unnecessary escape character: \.  no-useless-escape
+  Line 39:65:   Unnecessary escape character: \)  no-useless-escape
+  Line 39:109:  Unnecessary escape character: \.  no-useless-escape
+  Line 39:111:  Unnecessary escape character: \:  no-useless-escape
+  Line 74:24:   Unnecessary escape character: \.  no-useless-escape
+  Line 74:26:   Unnecessary escape character: \)  no-useless-escape
+  Line 178:46:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:48:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:65:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:67:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:90:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:92:  Unnecessary escape character: \:  no-useless-escape
+  Line 184:50:  Unnecessary escape character: \.  no-useless-escape
+  Line 184:52:  Unnecessary escape character: \)  no-useless-escape
+  Line 188:34:  Unnecessary escape character: \.  no-useless-escape
+  Line 188:36:  Unnecessary escape character: \)  no-useless-escape
+  Line 193:82:  Unnecessary escape character: \.  no-useless-escape
+  Line 193:84:  Unnecessary escape character: \)  no-useless-escape
+  Line 194:52:  Unnecessary escape character: \.  no-useless-escape
+  Line 194:54:  Unnecessary escape character: \)  no-useless-escape
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/utils/quizExtractor.js
+  Line 74:24:   Unnecessary escape character: \.  no-useless-escape
+  Line 74:26:   Unnecessary escape character: \)  no-useless-escape
+  Line 178:46:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:48:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:65:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:67:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:90:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:92:  Unnecessary escape character: \:  no-useless-escape
+  Line 184:50:  Unnecessary escape character: \.  no-useless-escape
+  Line 184:52:  Unnecessary escape character: \)  no-useless-escape
+  Line 188:34:  Unnecessary escape character: \.  no-useless-escape
+  Line 188:36:  Unnecessary escape character: \)  no-useless-escape
+  Line 193:82:  Unnecessary escape character: \.  no-useless-escape
+  Line 193:84:  Unnecessary escape character: \)  no-useless-escape
+  Line 194:52:  Unnecessary escape character: \.  no-useless-escape
+  Line 194:54:  Unnecessary escape character: \)  no-useless-escape
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/utils/quizExtractor.js
+  Line 74:24:   Unnecessary escape character: \.  no-useless-escape
+  Line 74:26:   Unnecessary escape character: \)  no-useless-escape
+  Line 178:46:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:48:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:65:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:67:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:90:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:92:  Unnecessary escape character: \:  no-useless-escape
+  Line 184:50:  Unnecessary escape character: \.  no-useless-escape
+  Line 184:52:  Unnecessary escape character: \)  no-useless-escape
+  Line 188:34:  Unnecessary escape character: \.  no-useless-escape
+  Line 188:36:  Unnecessary escape character: \)  no-useless-escape
+  Line 193:82:  Unnecessary escape character: \.  no-useless-escape
+  Line 193:84:  Unnecessary escape character: \)  no-useless-escape
+  Line 194:52:  Unnecessary escape character: \.  no-useless-escape
+  Line 194:54:  Unnecessary escape character: \)  no-useless-escape
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/utils/quizExtractor.js
+  Line 178:46:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:48:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:65:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:67:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:90:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:92:  Unnecessary escape character: \:  no-useless-escape
+  Line 184:50:  Unnecessary escape character: \.  no-useless-escape
+  Line 184:52:  Unnecessary escape character: \)  no-useless-escape
+  Line 188:34:  Unnecessary escape character: \.  no-useless-escape
+  Line 188:36:  Unnecessary escape character: \)  no-useless-escape
+  Line 193:82:  Unnecessary escape character: \.  no-useless-escape
+  Line 193:84:  Unnecessary escape character: \)  no-useless-escape
+  Line 194:52:  Unnecessary escape character: \.  no-useless-escape
+  Line 194:54:  Unnecessary escape character: \)  no-useless-escape
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/utils/quizExtractor.js
+  Line 178:46:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:48:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:65:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:67:  Unnecessary escape character: \)  no-useless-escape
+  Line 178:90:  Unnecessary escape character: \.  no-useless-escape
+  Line 178:92:  Unnecessary escape character: \:  no-useless-escape
+  Line 184:50:  Unnecessary escape character: \.  no-useless-escape
+  Line 184:52:  Unnecessary escape character: \)  no-useless-escape
+  Line 188:34:  Unnecessary escape character: \.  no-useless-escape
+  Line 188:36:  Unnecessary escape character: \)  no-useless-escape
+  Line 193:82:  Unnecessary escape character: \.  no-useless-escape
+  Line 193:84:  Unnecessary escape character: \)  no-useless-escape
+  Line 194:52:  Unnecessary escape character: \.  no-useless-escape
+  Line 194:54:  Unnecessary escape character: \)  no-useless-escape
+
+webpack compiled with 1 warning
