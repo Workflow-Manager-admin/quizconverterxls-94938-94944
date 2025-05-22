@@ -190,8 +190,8 @@ const parseQuestionBlock = (questionHtml) => {
   
   // Try to identify the correct answer
   // Look for patterns like "Answer: A" or "Correct: C" or just "B"
-  const answerMatch = optionsText.match(/(?:answer|correct|solution):?\s*([A-Z])[\.\)]/i) ||
-                      optionsText.match(/\b([A-Z])[\.\)]\s*(?:is\s+(?:the\s+)?correct|is\s+(?:the\s+)?right)\b/i);
+  const answerMatch = optionsText.match(/(?:answer|correct|solution):?\s*([A-Z])[.)]/i) ||
+                      optionsText.match(/\b([A-Z])[.)]\s*(?:is\s+(?:the\s+)?correct|is\s+(?:the\s+)?right)\b/i);
   
   let answer = '';
   if (answerMatch) {
