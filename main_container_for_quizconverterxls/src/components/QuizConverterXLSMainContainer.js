@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
@@ -44,6 +44,7 @@ const QuizConverterXLSMainContainer = () => {
       }
       
       setFile(file);
+      processWordDocument(file);
     }
   }, []);
   
@@ -56,21 +57,15 @@ const QuizConverterXLSMainContainer = () => {
     maxFiles: 1
   });
   
-  // Process the file when it changes
-  useEffect(() => {
-    if (file) {
-      processWordDocument(file);
-    }
-  }, [file]);
-  
   // Process Word document and extract quiz data
-  const processWordDocument = async (file) => {
+  const processWordDocument = (file) => {
     setIsProcessing(true);
     setError(null);
     
     try {
       // Use mammoth to convert Word to HTML
       const reader = new FileReader();
+      
       reader.onload = async (e) => {
         try {
           const arrayBuffer = e.target.result;
@@ -91,8 +86,8 @@ const QuizConverterXLSMainContainer = () => {
           } else {
             setError('No quiz questions were found in the document. Please check the format and try again.');
           }
-        } catch (error) {
-          console.error('Error processing document:', error);
+        } catch (err) {
+          console.error('Error processing document:', err);
           setError('Error processing the document. Please try a different file or format.');
         } finally {
           setIsProcessing(false);
@@ -105,8 +100,8 @@ const QuizConverterXLSMainContainer = () => {
       };
       
       reader.readAsArrayBuffer(file);
-    } catch (error) {
-      console.error('Error processing Word document:', error);
+    } catch (err) {
+      console.error('Error processing Word document:', err);
       setError('An unexpected error occurred. Please try again.');
       setIsProcessing(false);
     }
@@ -135,8 +130,8 @@ const QuizConverterXLSMainContainer = () => {
       // Save file
       const fileName = file ? `${file.name.replace('.docx', '')}_quiz.xlsx` : 'quiz_questions.xlsx';
       saveAs(new Blob([wbout], { type: 'application/octet-stream' }), fileName);
-    } catch (error) {
-      console.error('Error exporting to Excel:', error);
+    } catch (err) {
+      console.error('Error exporting to Excel:', err);
       setError('Error generating Excel file. Please try again.');
     }
   };
