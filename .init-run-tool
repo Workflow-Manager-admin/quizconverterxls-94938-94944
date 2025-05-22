@@ -1,0 +1,4 @@
+{
+    "command": "PORT=<port> BROWSER=none npm start",
+    "working_directory": "/home/kavia/workspace/code-generation/quizconverterxls-94938-94944/main_container_for_quizconverterxls"
+}
