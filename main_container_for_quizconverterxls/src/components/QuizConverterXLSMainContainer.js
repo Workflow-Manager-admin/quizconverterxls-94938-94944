@@ -85,9 +85,9 @@ const QuizConverterXLSMainContainer = () => {
         </div>
       )}
       
-      {/* Demo preview table */}
+      {/* Quiz data preview table */}
       <div className="preview-section">
-        <h3>Preview (Demo data)</h3>
+        <h3>{extractedQuizData.length > 0 ? 'Extracted Quiz Data' : 'Preview (Demo data)'}</h3>
         <table className="preview-table">
           <thead>
             <tr>
