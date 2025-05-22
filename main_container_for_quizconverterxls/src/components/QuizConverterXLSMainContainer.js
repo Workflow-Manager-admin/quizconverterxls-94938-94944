@@ -20,7 +20,18 @@ const QuizConverterXLSMainContainer = () => {
   // Handle file selection
   const handleFileChange = (event) => {
     if (event.target.files && event.target.files[0]) {
-      setFile(event.target.files[0]);
+      const selectedFile = event.target.files[0];
+      
+      // Validate file type
+      if (!selectedFile.name.toLowerCase().endsWith('.docx')) {
+        setError('Please select a valid Word document (.docx)');
+        return;
+      }
+      
+      // Clear any previous errors when a new file is selected
+      setError(null);
+      setExtractedQuizData([]);
+      setFile(selectedFile);
     }
   };
   
